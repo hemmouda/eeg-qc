@@ -1,0 +1,109 @@
+# Configuration file with the different rules and thresholds.
+# This configuration file defines how the quality of the channels (and so the recording) is defined.
+
+
+# The shortest a recording can be
+min_duration_h: 1
+# The longest a recording can be
+max_duration_h: 14
+
+
+# This entry lets you define default values for the existing rules that you
+# can then use in the channels without having to respecify the values.
+# All rules follow the same syntax:
+# RULE_NAME:
+#   value: rule dependent, but generally this is the value that the epoch needs to surpass for it to count towards the thresholds.
+#   red: a value from 0 to 100 representing the percentage of epochs that need to satisfy the rule for the channel quality to be RED.
+#   yellow: a value from 0 to 100 and less than the value of red, representing the percentage of epochs that need to satisfy the rule for the channel quality to be YELLOW. 
+default_rules_values:
+
+  CLIPPED:
+    value: 0.01 # passes if epoch's clipped_frac >= value (saturated signals)
+    red: 10
+    yellow: 6
+
+  FLAT:
+    value: 0.5 # passes if epoch's flatline_max_s >= value (constant/dead signals)
+    red: 10
+    yellow: 5
+
+  HIGH_RMS:
+    value: 100 # passes if epoch's rms_uv >= value (powerful signals)
+    red: 25
+    yellow: 10
+
+  LOW_RMS:
+    value: 7.5 # passes if epoch's rms_uv <= value (weak signals) | Know that the EMG channel naturally has low RMS
+    red: 15
+    yellow: 10
+
+  HIGH_DIFF:
+    value: 150 # passes if epoch's max_diff_uv >= value (abrupt jumps)
+    red: 60
+    yellow: 20
+
+  HIGH_MAD_DIFF:
+    value: 1.1 # passes if epoch's mad_diff_uv >= value (unstable signals)
+    red: 60
+    yellow: 30
+
+  HIGH_PTP:
+    value: 350 # passes if epoch's ptp_uv >= value (high-varying signals, peak-to-peak)
+    red: 50
+    yellow: 20
+
+  HIGH_MAD:
+    value: 30 # passes if epoch's mad_uv >= value (high-varying signals, MAD)
+    red: 50
+    yellow: 20
+
+  HAS_ARTF:
+    value: "ARTF" # passes if model predicts artifact of this type. Available are "ARTF" for all types of artifacts, and "MUSC" for muscle artifacts only. The models only predict on the EEG channel.
+    red: 70
+    yellow: 45
+# Please know that because of lack of data to test on, these default values can be considered as being arbitrary
+
+
+# Here you define which channels should have/use which rules.
+# You can specify the rule name and the default values from above will be used, like so:
+# EEG:
+#   HIGH_PTP: NULL
+# Or you can override individual values of the default values, like so:
+# EEG:
+#   HIGH_PTP:
+#     red: 40
+# In the later example, the rule will inherit the missing values and it will be as if you wrote:
+# EEG:
+#   HIGH_PTP:
+#     value: 350
+#     red: 40
+#     yellow: 20
+# Each channel can have multiple rules, or none. But at least one rule should exist across all channels.
+# If you want a channel to have no rules simply don't write the channel entry.
+# Valid channels are EEG, EOGl, EOGr, and EMG.
+channels:
+
+  EEG:
+    CLIPPED: NULL
+    FLAT: NULL
+    HIGH_PTP: NULL
+    HIGH_MAD: NULL
+    HAS_ARTF: NULL
+
+  EOGl:
+    CLIPPED: NULL
+    FLAT: NULL
+    HIGH_PTP: NULL
+    HIGH_RMS:
+      value: 120
+
+  EOGr:
+    CLIPPED: NULL
+    FLAT: NULL
+    HIGH_PTP: NULL
+    HIGH_RMS:
+      red: 30
+      yellow: 15
+
+# For more info, see https://hemmouda.com/eeg-qc
+  

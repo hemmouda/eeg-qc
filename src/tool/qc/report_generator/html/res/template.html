@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EDF Report — {{FILENAME}}</title>
+  <style>{{STYLE}}</style>
+</head>
+<body>
+<div class="container">
+  <!-- ── Hero ── -->
+  <div class="hero">
+    <div class="quality-circle quality-{{QUALITY}}">
+      <span class="quality-label">{{QUALITY_UP}}</span>
+    </div>
+    <div class="hero-info">
+      <h1>{{FILENAME}}</h1>
+      <span class="generated">Report generated {{NOW}}</span>
+    </div>
+  </div>
+  <!-- ── EDF Info ── -->
+  <div class="section">
+    <div class="section-title">File Information</div>
+    <div class="info-grid" id="info-grid"></div>
+    <div class="justification" id="quality-justification"></div>
+  </div>
+  <!-- ── Remarks ── -->
+  <div class="section">
+    <div class="section-title">Special Remarks</div>
+    <div class="card-list" id="remark-list"></div>
+  </div>
+  <!-- ── Channels ── -->
+  <div class="section">
+    <div class="section-title">Channels</div>
+    <div class="channel-list" id="channel-list"></div>
+  </div>
+</div>
+<!-- ── Epoch group modal ── -->
+<div class="modal-overlay" id="modal-overlay">
+  <div class="modal">
+    <button class="modal-close" id="modal-close">✕</button>
+    <div class="modal-header">
+      <span class="modal-traffic-light" id="modal-traffic-light"></span>
+      <h3 id="modal-title"></h3>
+    </div>
+    <div id="modal-body"></div>
+  </div>
+</div>
+<script>
+  const DATA = {{DATA_JSON}};
+</script>
+<script>{{SCRIPT}}</script>
+</body>
+</html>

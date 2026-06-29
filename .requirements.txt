@@ -1,0 +1,8 @@
+pandas
+matplotlib
+joblib
+scikit-learn
+mne
+PyYAML
+
+# See .full_requirements.txt for full details
