@@ -44,6 +44,7 @@ MODELS_CONFIG.epoch_duration_s = 10
 
 _MODELS_DIR = Path(__file__).resolve().parent / "res" / "model"
 
+# Model trained on train + val + test
 _ARTF_MODEL = ModelConfig(MODELS_CONFIG, _MODELS_DIR / "dt_artf.joblib")
 _ARTF_MODEL.model_name = "dt_artf"
 _ARTF_MODEL.artifact_name = "ARTF"
@@ -51,11 +52,12 @@ _ARTF_MODEL.target_channels = {"EEG"}
 _ARTF_MODEL.features_names = [
     "mad_diff_uv_z",
     "ptp_uv_z",
+    "power_0_5_z",
     "flatline_max_s",
     "max_diff_uv_z",
-    "power_0_5_z",
 ]
 
+# Model just for testing. Not production valid
 _MUSC_MODEL = ModelConfig(MODELS_CONFIG, _MODELS_DIR / "dt_musc.joblib")
 _MUSC_MODEL.model_name = "dt_musc"
 _MUSC_MODEL.artifact_name = "MUSC"
