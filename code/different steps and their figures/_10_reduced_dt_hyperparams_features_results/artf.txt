@@ -1,0 +1,815 @@
+
+========================================
+Depth 1
+========================================
+|--- ptp_uv_z <= 0.82
+|   |--- class: 0
+|--- ptp_uv_z >  0.82
+|   |--- class: 1
+
+Features used:
+  ptp_uv_z: 1.0000
+
+========================================
+Depth 2
+========================================
+|--- ptp_uv_z <= 0.82
+|   |--- flatline_max_s <= 0.01
+|   |   |--- class: 1
+|   |--- flatline_max_s >  0.01
+|   |   |--- class: 0
+|--- ptp_uv_z >  0.82
+|   |--- ptp_uv_z <= 2.25
+|   |   |--- class: 1
+|   |--- ptp_uv_z >  2.25
+|   |   |--- class: 1
+
+Features used:
+  ptp_uv_z: 0.8186
+  flatline_max_s: 0.1814
+
+========================================
+Depth 3
+========================================
+|--- ptp_uv_z <= 0.82
+|   |--- flatline_max_s <= 0.01
+|   |   |--- mad_diff_uv_z <= 1.12
+|   |   |   |--- class: 1
+|   |   |--- mad_diff_uv_z >  1.12
+|   |   |   |--- class: 1
+|   |--- flatline_max_s >  0.01
+|   |   |--- flatline_max_s <= 0.01
+|   |   |   |--- class: 0
+|   |   |--- flatline_max_s >  0.01
+|   |   |   |--- class: 0
+|--- ptp_uv_z >  0.82
+|   |--- ptp_uv_z <= 2.25
+|   |   |--- flatline_max_s <= 0.01
+|   |   |   |--- class: 1
+|   |   |--- flatline_max_s >  0.01
+|   |   |   |--- class: 1
+|   |--- ptp_uv_z >  2.25
+|   |   |--- ptp_uv_z <= 4.29
+|   |   |   |--- class: 1
+|   |   |--- ptp_uv_z >  4.29
+|   |   |   |--- class: 1
+
+Features used:
+  mad_diff_uv_z: 0.0085
+  ptp_uv_z: 0.7467
+  flatline_max_s: 0.2448
+
+========================================
+Depth 4
+========================================
+|--- ptp_uv_z <= 0.82
+|   |--- flatline_max_s <= 0.01
+|   |   |--- mad_diff_uv_z <= 1.12
+|   |   |   |--- ptp_uv_z <= -0.27
+|   |   |   |   |--- class: 1
+|   |   |   |--- ptp_uv_z >  -0.27
+|   |   |   |   |--- class: 1
+|   |   |--- mad_diff_uv_z >  1.12
+|   |   |   |--- ptp_uv_z <= -0.04
+|   |   |   |   |--- class: 0
+|   |   |   |--- ptp_uv_z >  -0.04
+|   |   |   |   |--- class: 1
+|   |--- flatline_max_s >  0.01
+|   |   |--- flatline_max_s <= 0.01
+|   |   |   |--- power_0_5_z <= 2.25
+|   |   |   |   |--- class: 0
+|   |   |   |--- power_0_5_z >  2.25
+|   |   |   |   |--- class: 1
+|   |   |--- flatline_max_s >  0.01
+|   |   |   |--- ptp_uv_z <= -0.23
+|   |   |   |   |--- class: 0
+|   |   |   |--- ptp_uv_z >  -0.23
+|   |   |   |   |--- class: 0
+|--- ptp_uv_z >  0.82
+|   |--- ptp_uv_z <= 2.25
+|   |   |--- flatline_max_s <= 0.01
+|   |   |   |--- mad_diff_uv_z <= 2.98
+|   |   |   |   |--- class: 1
+|   |   |   |--- mad_diff_uv_z >  2.98
+|   |   |   |   |--- class: 1
+|   |   |--- flatline_max_s >  0.01
+|   |   |   |--- power_0_5_z <= 5.77
+|   |   |   |   |--- class: 1
+|   |   |   |--- power_0_5_z >  5.77
+|   |   |   |   |--- class: 1
+|   |--- ptp_uv_z >  2.25
+|   |   |--- ptp_uv_z <= 4.29
+|   |   |   |--- power_0_5_z <= 11.26
+|   |   |   |   |--- class: 1
+|   |   |   |--- power_0_5_z >  11.26
+|   |   |   |   |--- class: 1
+|   |   |--- ptp_uv_z >  4.29
+|   |   |   |--- power_0_5_z <= 27.50
+|   |   |   |   |--- class: 1
+|   |   |   |--- power_0_5_z >  27.50
+|   |   |   |   |--- class: 1
+
+Features used:
+  mad_diff_uv_z: 0.0110
+  ptp_uv_z: 0.7259
+  power_0_5_z: 0.0351
+  flatline_max_s: 0.2280
+
+========================================
+Depth 5
+========================================
+|--- ptp_uv_z <= 0.82
+|   |--- flatline_max_s <= 0.01
+|   |   |--- mad_diff_uv_z <= 1.12
+|   |   |   |--- ptp_uv_z <= -0.27
+|   |   |   |   |--- mad_diff_uv_z <= -0.28
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- mad_diff_uv_z >  -0.28
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- ptp_uv_z >  -0.27
+|   |   |   |   |--- max_diff_uv_z <= -0.13
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- max_diff_uv_z >  -0.13
+|   |   |   |   |   |--- class: 1
+|   |   |--- mad_diff_uv_z >  1.12
+|   |   |   |--- ptp_uv_z <= -0.04
+|   |   |   |   |--- power_0_5_z <= -0.79
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- power_0_5_z >  -0.79
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- ptp_uv_z >  -0.04
+|   |   |   |   |--- max_diff_uv_z <= 1.39
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- max_diff_uv_z >  1.39
+|   |   |   |   |   |--- class: 0
+|   |--- flatline_max_s >  0.01
+|   |   |--- flatline_max_s <= 0.01
+|   |   |   |--- power_0_5_z <= 2.25
+|   |   |   |   |--- max_diff_uv_z <= -1.05
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- max_diff_uv_z >  -1.05
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- power_0_5_z >  2.25
+|   |   |   |   |--- power_0_5_z <= 3.86
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- power_0_5_z >  3.86
+|   |   |   |   |   |--- class: 1
+|   |   |--- flatline_max_s >  0.01
+|   |   |   |--- ptp_uv_z <= -0.23
+|   |   |   |   |--- max_diff_uv_z <= -0.33
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- max_diff_uv_z >  -0.33
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- ptp_uv_z >  -0.23
+|   |   |   |   |--- max_diff_uv_z <= 0.10
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- max_diff_uv_z >  0.10
+|   |   |   |   |   |--- class: 0
+|--- ptp_uv_z >  0.82
+|   |--- ptp_uv_z <= 2.25
+|   |   |--- flatline_max_s <= 0.01
+|   |   |   |--- mad_diff_uv_z <= 2.98
+|   |   |   |   |--- power_0_5_z <= 5.08
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- power_0_5_z >  5.08
+|   |   |   |   |   |--- class: 1
+|   |   |   |--- mad_diff_uv_z >  2.98
+|   |   |   |   |--- max_diff_uv_z <= 2.30
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- max_diff_uv_z >  2.30
+|   |   |   |   |   |--- class: 1
+|   |   |--- flatline_max_s >  0.01
+|   |   |   |--- power_0_5_z <= 5.77
+|   |   |   |   |--- max_diff_uv_z <= 0.67
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- max_diff_uv_z >  0.67
+|   |   |   |   |   |--- class: 1
+|   |   |   |--- power_0_5_z >  5.77
+|   |   |   |   |--- power_0_5_z <= 10.67
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- power_0_5_z >  10.67
+|   |   |   |   |   |--- class: 1
+|   |--- ptp_uv_z >  2.25
+|   |   |--- ptp_uv_z <= 4.29
+|   |   |   |--- power_0_5_z <= 11.26
+|   |   |   |   |--- max_diff_uv_z <= 1.38
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- max_diff_uv_z >  1.38
+|   |   |   |   |   |--- class: 1
+|   |   |   |--- power_0_5_z >  11.26
+|   |   |   |   |--- flatline_max_s <= 0.02
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- flatline_max_s >  0.02
+|   |   |   |   |   |--- class: 0
+|   |   |--- ptp_uv_z >  4.29
+|   |   |   |--- power_0_5_z <= 27.50
+|   |   |   |   |--- max_diff_uv_z <= 3.06
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- max_diff_uv_z >  3.06
+|   |   |   |   |   |--- class: 1
+|   |   |   |--- power_0_5_z >  27.50
+|   |   |   |   |--- mad_diff_uv_z <= -1.18
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- mad_diff_uv_z >  -1.18
+|   |   |   |   |   |--- class: 1
+
+Features used:
+  mad_diff_uv_z: 0.0166
+  ptp_uv_z: 0.6862
+  power_0_5_z: 0.0380
+  flatline_max_s: 0.2166
+  max_diff_uv_z: 0.0427
+
+========================================
+Depth 6
+========================================
+|--- ptp_uv_z <= 0.82
+|   |--- flatline_max_s <= 0.01
+|   |   |--- mad_diff_uv_z <= 1.12
+|   |   |   |--- ptp_uv_z <= -0.27
+|   |   |   |   |--- mad_diff_uv_z <= -0.28
+|   |   |   |   |   |--- mad_diff_uv_z <= -0.77
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- mad_diff_uv_z >  -0.77
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- mad_diff_uv_z >  -0.28
+|   |   |   |   |   |--- ptp_uv_z <= -0.50
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- ptp_uv_z >  -0.50
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |--- ptp_uv_z >  -0.27
+|   |   |   |   |--- max_diff_uv_z <= -0.13
+|   |   |   |   |   |--- power_0_5_z <= 2.22
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- power_0_5_z >  2.22
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- max_diff_uv_z >  -0.13
+|   |   |   |   |   |--- mad_diff_uv_z <= 0.13
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- mad_diff_uv_z >  0.13
+|   |   |   |   |   |   |--- class: 1
+|   |   |--- mad_diff_uv_z >  1.12
+|   |   |   |--- ptp_uv_z <= -0.04
+|   |   |   |   |--- power_0_5_z <= -0.79
+|   |   |   |   |   |--- ptp_uv_z <= -0.20
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- ptp_uv_z >  -0.20
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |--- power_0_5_z >  -0.79
+|   |   |   |   |   |--- max_diff_uv_z <= 0.38
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- max_diff_uv_z >  0.38
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |--- ptp_uv_z >  -0.04
+|   |   |   |   |--- max_diff_uv_z <= 1.39
+|   |   |   |   |   |--- ptp_uv_z <= 0.49
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- ptp_uv_z >  0.49
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- max_diff_uv_z >  1.39
+|   |   |   |   |   |--- power_0_5_z <= 0.51
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- power_0_5_z >  0.51
+|   |   |   |   |   |   |--- class: 1
+|   |--- flatline_max_s >  0.01
+|   |   |--- flatline_max_s <= 0.01
+|   |   |   |--- power_0_5_z <= 2.25
+|   |   |   |   |--- max_diff_uv_z <= -1.05
+|   |   |   |   |   |--- ptp_uv_z <= -0.93
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- ptp_uv_z >  -0.93
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |--- max_diff_uv_z >  -1.05
+|   |   |   |   |   |--- ptp_uv_z <= -0.08
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- ptp_uv_z >  -0.08
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |--- power_0_5_z >  2.25
+|   |   |   |   |--- power_0_5_z <= 3.86
+|   |   |   |   |   |--- ptp_uv_z <= 0.32
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- ptp_uv_z >  0.32
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- power_0_5_z >  3.86
+|   |   |   |   |   |--- power_0_5_z <= 7.84
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- power_0_5_z >  7.84
+|   |   |   |   |   |   |--- class: 1
+|   |   |--- flatline_max_s >  0.01
+|   |   |   |--- ptp_uv_z <= -0.23
+|   |   |   |   |--- max_diff_uv_z <= -0.33
+|   |   |   |   |   |--- flatline_max_s <= 0.02
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- flatline_max_s >  0.02
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |--- max_diff_uv_z >  -0.33
+|   |   |   |   |   |--- mad_diff_uv_z <= -0.14
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- mad_diff_uv_z >  -0.14
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |--- ptp_uv_z >  -0.23
+|   |   |   |   |--- max_diff_uv_z <= 0.10
+|   |   |   |   |   |--- power_0_5_z <= 2.30
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- power_0_5_z >  2.30
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |--- max_diff_uv_z >  0.10
+|   |   |   |   |   |--- mad_diff_uv_z <= 0.00
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- mad_diff_uv_z >  0.00
+|   |   |   |   |   |   |--- class: 0
+|--- ptp_uv_z >  0.82
+|   |--- ptp_uv_z <= 2.25
+|   |   |--- flatline_max_s <= 0.01
+|   |   |   |--- mad_diff_uv_z <= 2.98
+|   |   |   |   |--- power_0_5_z <= 5.08
+|   |   |   |   |   |--- max_diff_uv_z <= 0.40
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- max_diff_uv_z >  0.40
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- power_0_5_z >  5.08
+|   |   |   |   |   |--- power_0_5_z <= 11.19
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- power_0_5_z >  11.19
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |--- mad_diff_uv_z >  2.98
+|   |   |   |   |--- max_diff_uv_z <= 2.30
+|   |   |   |   |   |--- ptp_uv_z <= 1.54
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- ptp_uv_z >  1.54
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- max_diff_uv_z >  2.30
+|   |   |   |   |   |--- ptp_uv_z <= 1.28
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- ptp_uv_z >  1.28
+|   |   |   |   |   |   |--- class: 1
+|   |   |--- flatline_max_s >  0.01
+|   |   |   |--- power_0_5_z <= 5.77
+|   |   |   |   |--- max_diff_uv_z <= 0.67
+|   |   |   |   |   |--- power_0_5_z <= 3.10
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- power_0_5_z >  3.10
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- max_diff_uv_z >  0.67
+|   |   |   |   |   |--- mad_diff_uv_z <= 1.17
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- mad_diff_uv_z >  1.17
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |--- power_0_5_z >  5.77
+|   |   |   |   |--- power_0_5_z <= 10.67
+|   |   |   |   |   |--- flatline_max_s <= 0.01
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- flatline_max_s >  0.01
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- power_0_5_z >  10.67
+|   |   |   |   |   |--- power_0_5_z <= 17.43
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- power_0_5_z >  17.43
+|   |   |   |   |   |   |--- class: 1
+|   |--- ptp_uv_z >  2.25
+|   |   |--- ptp_uv_z <= 4.29
+|   |   |   |--- power_0_5_z <= 11.26
+|   |   |   |   |--- max_diff_uv_z <= 1.38
+|   |   |   |   |   |--- power_0_5_z <= 5.11
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- power_0_5_z >  5.11
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- max_diff_uv_z >  1.38
+|   |   |   |   |   |--- mad_diff_uv_z <= 5.24
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- mad_diff_uv_z >  5.24
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |--- power_0_5_z >  11.26
+|   |   |   |   |--- flatline_max_s <= 0.02
+|   |   |   |   |   |--- power_0_5_z <= 21.41
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- power_0_5_z >  21.41
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- flatline_max_s >  0.02
+|   |   |   |   |   |--- max_diff_uv_z <= -0.05
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- max_diff_uv_z >  -0.05
+|   |   |   |   |   |   |--- class: 1
+|   |   |--- ptp_uv_z >  4.29
+|   |   |   |--- power_0_5_z <= 27.50
+|   |   |   |   |--- max_diff_uv_z <= 3.06
+|   |   |   |   |   |--- power_0_5_z <= 6.09
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- power_0_5_z >  6.09
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- max_diff_uv_z >  3.06
+|   |   |   |   |   |--- mad_diff_uv_z <= 103.11
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- mad_diff_uv_z >  103.11
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |--- power_0_5_z >  27.50
+|   |   |   |   |--- mad_diff_uv_z <= -1.18
+|   |   |   |   |   |--- max_diff_uv_z <= 255.92
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- max_diff_uv_z >  255.92
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- mad_diff_uv_z >  -1.18
+|   |   |   |   |   |--- mad_diff_uv_z <= -0.01
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- mad_diff_uv_z >  -0.01
+|   |   |   |   |   |   |--- class: 1
+
+Features used:
+  mad_diff_uv_z: 0.0300
+  ptp_uv_z: 0.6689
+  power_0_5_z: 0.0470
+  flatline_max_s: 0.2096
+  max_diff_uv_z: 0.0445
+
+========================================
+Depth 7
+========================================
+|--- ptp_uv_z <= 0.82
+|   |--- flatline_max_s <= 0.01
+|   |   |--- mad_diff_uv_z <= 1.12
+|   |   |   |--- ptp_uv_z <= -0.27
+|   |   |   |   |--- mad_diff_uv_z <= -0.28
+|   |   |   |   |   |--- mad_diff_uv_z <= -0.77
+|   |   |   |   |   |   |--- mad_diff_uv_z <= -1.12
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- mad_diff_uv_z >  -1.12
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- mad_diff_uv_z >  -0.77
+|   |   |   |   |   |   |--- max_diff_uv_z <= -0.49
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- max_diff_uv_z >  -0.49
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- mad_diff_uv_z >  -0.28
+|   |   |   |   |   |--- ptp_uv_z <= -0.50
+|   |   |   |   |   |   |--- max_diff_uv_z <= -0.77
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- max_diff_uv_z >  -0.77
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- ptp_uv_z >  -0.50
+|   |   |   |   |   |   |--- mad_diff_uv_z <= 0.22
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- mad_diff_uv_z >  0.22
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |--- ptp_uv_z >  -0.27
+|   |   |   |   |--- max_diff_uv_z <= -0.13
+|   |   |   |   |   |--- power_0_5_z <= 2.22
+|   |   |   |   |   |   |--- max_diff_uv_z <= -0.56
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- max_diff_uv_z >  -0.56
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- power_0_5_z >  2.22
+|   |   |   |   |   |   |--- power_0_5_z <= 3.18
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- power_0_5_z >  3.18
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- max_diff_uv_z >  -0.13
+|   |   |   |   |   |--- mad_diff_uv_z <= 0.13
+|   |   |   |   |   |   |--- mad_diff_uv_z <= -0.47
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- mad_diff_uv_z >  -0.47
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- mad_diff_uv_z >  0.13
+|   |   |   |   |   |   |--- ptp_uv_z <= 0.03
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- ptp_uv_z >  0.03
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |--- mad_diff_uv_z >  1.12
+|   |   |   |--- ptp_uv_z <= -0.04
+|   |   |   |   |--- power_0_5_z <= -0.79
+|   |   |   |   |   |--- ptp_uv_z <= -0.20
+|   |   |   |   |   |   |--- mad_diff_uv_z <= 1.13
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- mad_diff_uv_z >  1.13
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- ptp_uv_z >  -0.20
+|   |   |   |   |   |   |--- max_diff_uv_z <= 0.61
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- max_diff_uv_z >  0.61
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |--- power_0_5_z >  -0.79
+|   |   |   |   |   |--- max_diff_uv_z <= 0.38
+|   |   |   |   |   |   |--- power_0_5_z <= -0.08
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- power_0_5_z >  -0.08
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- max_diff_uv_z >  0.38
+|   |   |   |   |   |   |--- max_diff_uv_z <= 3.48
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- max_diff_uv_z >  3.48
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |--- ptp_uv_z >  -0.04
+|   |   |   |   |--- max_diff_uv_z <= 1.39
+|   |   |   |   |   |--- ptp_uv_z <= 0.49
+|   |   |   |   |   |   |--- max_diff_uv_z <= 0.71
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- max_diff_uv_z >  0.71
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- ptp_uv_z >  0.49
+|   |   |   |   |   |   |--- mad_diff_uv_z <= 2.72
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- mad_diff_uv_z >  2.72
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- max_diff_uv_z >  1.39
+|   |   |   |   |   |--- power_0_5_z <= 0.51
+|   |   |   |   |   |   |--- mad_diff_uv_z <= 1.44
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- mad_diff_uv_z >  1.44
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- power_0_5_z >  0.51
+|   |   |   |   |   |   |--- power_0_5_z <= 2.82
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- power_0_5_z >  2.82
+|   |   |   |   |   |   |   |--- class: 1
+|   |--- flatline_max_s >  0.01
+|   |   |--- flatline_max_s <= 0.01
+|   |   |   |--- power_0_5_z <= 2.25
+|   |   |   |   |--- max_diff_uv_z <= -1.05
+|   |   |   |   |   |--- ptp_uv_z <= -0.93
+|   |   |   |   |   |   |--- mad_diff_uv_z <= -1.05
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- mad_diff_uv_z >  -1.05
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- ptp_uv_z >  -0.93
+|   |   |   |   |   |   |--- power_0_5_z <= -0.16
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- power_0_5_z >  -0.16
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- max_diff_uv_z >  -1.05
+|   |   |   |   |   |--- ptp_uv_z <= -0.08
+|   |   |   |   |   |   |--- power_0_5_z <= -0.78
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- power_0_5_z >  -0.78
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- ptp_uv_z >  -0.08
+|   |   |   |   |   |   |--- max_diff_uv_z <= -0.03
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- max_diff_uv_z >  -0.03
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |--- power_0_5_z >  2.25
+|   |   |   |   |--- power_0_5_z <= 3.86
+|   |   |   |   |   |--- ptp_uv_z <= 0.32
+|   |   |   |   |   |   |--- power_0_5_z <= 2.84
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- power_0_5_z >  2.84
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- ptp_uv_z >  0.32
+|   |   |   |   |   |   |--- max_diff_uv_z <= 0.28
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- max_diff_uv_z >  0.28
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- power_0_5_z >  3.86
+|   |   |   |   |   |--- power_0_5_z <= 7.84
+|   |   |   |   |   |   |--- mad_diff_uv_z <= -0.76
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- mad_diff_uv_z >  -0.76
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- power_0_5_z >  7.84
+|   |   |   |   |   |   |--- max_diff_uv_z <= -1.30
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- max_diff_uv_z >  -1.30
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |--- flatline_max_s >  0.01
+|   |   |   |--- ptp_uv_z <= -0.23
+|   |   |   |   |--- max_diff_uv_z <= -0.33
+|   |   |   |   |   |--- flatline_max_s <= 0.02
+|   |   |   |   |   |   |--- mad_diff_uv_z <= -0.91
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- mad_diff_uv_z >  -0.91
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- flatline_max_s >  0.02
+|   |   |   |   |   |   |--- flatline_max_s <= 0.31
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- flatline_max_s >  0.31
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- max_diff_uv_z >  -0.33
+|   |   |   |   |   |--- mad_diff_uv_z <= -0.14
+|   |   |   |   |   |   |--- ptp_uv_z <= -0.55
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- ptp_uv_z >  -0.55
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- mad_diff_uv_z >  -0.14
+|   |   |   |   |   |   |--- max_diff_uv_z <= 2.87
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- max_diff_uv_z >  2.87
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |--- ptp_uv_z >  -0.23
+|   |   |   |   |--- max_diff_uv_z <= 0.10
+|   |   |   |   |   |--- power_0_5_z <= 2.30
+|   |   |   |   |   |   |--- power_0_5_z <= 0.87
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- power_0_5_z >  0.87
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- power_0_5_z >  2.30
+|   |   |   |   |   |   |--- power_0_5_z <= 5.16
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- power_0_5_z >  5.16
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- max_diff_uv_z >  0.10
+|   |   |   |   |   |--- mad_diff_uv_z <= 0.00
+|   |   |   |   |   |   |--- ptp_uv_z <= 0.20
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- ptp_uv_z >  0.20
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- mad_diff_uv_z >  0.00
+|   |   |   |   |   |   |--- max_diff_uv_z <= 6.07
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- max_diff_uv_z >  6.07
+|   |   |   |   |   |   |   |--- class: 1
+|--- ptp_uv_z >  0.82
+|   |--- ptp_uv_z <= 2.25
+|   |   |--- flatline_max_s <= 0.01
+|   |   |   |--- mad_diff_uv_z <= 2.98
+|   |   |   |   |--- power_0_5_z <= 5.08
+|   |   |   |   |   |--- max_diff_uv_z <= 0.40
+|   |   |   |   |   |   |--- power_0_5_z <= 1.82
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- power_0_5_z >  1.82
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- max_diff_uv_z >  0.40
+|   |   |   |   |   |   |--- mad_diff_uv_z <= 1.24
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- mad_diff_uv_z >  1.24
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- power_0_5_z >  5.08
+|   |   |   |   |   |--- power_0_5_z <= 11.19
+|   |   |   |   |   |   |--- ptp_uv_z <= 1.95
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- ptp_uv_z >  1.95
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- power_0_5_z >  11.19
+|   |   |   |   |   |   |--- ptp_uv_z <= 1.68
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- ptp_uv_z >  1.68
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |--- mad_diff_uv_z >  2.98
+|   |   |   |   |--- max_diff_uv_z <= 2.30
+|   |   |   |   |   |--- ptp_uv_z <= 1.54
+|   |   |   |   |   |   |--- max_diff_uv_z <= 1.67
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- max_diff_uv_z >  1.67
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- ptp_uv_z >  1.54
+|   |   |   |   |   |   |--- power_0_5_z <= 0.09
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- power_0_5_z >  0.09
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- max_diff_uv_z >  2.30
+|   |   |   |   |   |--- ptp_uv_z <= 1.28
+|   |   |   |   |   |   |--- max_diff_uv_z <= 9.15
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- max_diff_uv_z >  9.15
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- ptp_uv_z >  1.28
+|   |   |   |   |   |   |--- power_0_5_z <= 3.77
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- power_0_5_z >  3.77
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |--- flatline_max_s >  0.01
+|   |   |   |--- power_0_5_z <= 5.77
+|   |   |   |   |--- max_diff_uv_z <= 0.67
+|   |   |   |   |   |--- power_0_5_z <= 3.10
+|   |   |   |   |   |   |--- flatline_max_s <= 0.01
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- flatline_max_s >  0.01
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- power_0_5_z >  3.10
+|   |   |   |   |   |   |--- mad_diff_uv_z <= 0.90
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- mad_diff_uv_z >  0.90
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- max_diff_uv_z >  0.67
+|   |   |   |   |   |--- mad_diff_uv_z <= 1.17
+|   |   |   |   |   |   |--- max_diff_uv_z <= 1.04
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- max_diff_uv_z >  1.04
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- mad_diff_uv_z >  1.17
+|   |   |   |   |   |   |--- max_diff_uv_z <= 12.28
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- max_diff_uv_z >  12.28
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |--- power_0_5_z >  5.77
+|   |   |   |   |--- power_0_5_z <= 10.67
+|   |   |   |   |   |--- flatline_max_s <= 0.01
+|   |   |   |   |   |   |--- max_diff_uv_z <= 0.42
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- max_diff_uv_z >  0.42
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- flatline_max_s >  0.01
+|   |   |   |   |   |   |--- power_0_5_z <= 7.45
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- power_0_5_z >  7.45
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- power_0_5_z >  10.67
+|   |   |   |   |   |--- power_0_5_z <= 17.43
+|   |   |   |   |   |   |--- power_0_5_z <= 17.40
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- power_0_5_z >  17.40
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- power_0_5_z >  17.43
+|   |   |   |   |   |   |--- flatline_max_s <= 0.02
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- flatline_max_s >  0.02
+|   |   |   |   |   |   |   |--- class: 1
+|   |--- ptp_uv_z >  2.25
+|   |   |--- ptp_uv_z <= 4.29
+|   |   |   |--- power_0_5_z <= 11.26
+|   |   |   |   |--- max_diff_uv_z <= 1.38
+|   |   |   |   |   |--- power_0_5_z <= 5.11
+|   |   |   |   |   |   |--- flatline_max_s <= 0.01
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- flatline_max_s >  0.01
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- power_0_5_z >  5.11
+|   |   |   |   |   |   |--- mad_diff_uv_z <= 0.19
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- mad_diff_uv_z >  0.19
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- max_diff_uv_z >  1.38
+|   |   |   |   |   |--- mad_diff_uv_z <= 5.24
+|   |   |   |   |   |   |--- flatline_max_s <= 0.01
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- flatline_max_s >  0.01
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- mad_diff_uv_z >  5.24
+|   |   |   |   |   |   |--- max_diff_uv_z <= 14.49
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- max_diff_uv_z >  14.49
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |--- power_0_5_z >  11.26
+|   |   |   |   |--- flatline_max_s <= 0.02
+|   |   |   |   |   |--- power_0_5_z <= 21.41
+|   |   |   |   |   |   |--- max_diff_uv_z <= -0.17
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- max_diff_uv_z >  -0.17
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- power_0_5_z >  21.41
+|   |   |   |   |   |   |--- max_diff_uv_z <= -0.38
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- max_diff_uv_z >  -0.38
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- flatline_max_s >  0.02
+|   |   |   |   |   |--- max_diff_uv_z <= -0.05
+|   |   |   |   |   |   |--- power_0_5_z <= 26.09
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- power_0_5_z >  26.09
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- max_diff_uv_z >  -0.05
+|   |   |   |   |   |   |--- mad_diff_uv_z <= 3.62
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- mad_diff_uv_z >  3.62
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |--- ptp_uv_z >  4.29
+|   |   |   |--- power_0_5_z <= 27.50
+|   |   |   |   |--- max_diff_uv_z <= 3.06
+|   |   |   |   |   |--- power_0_5_z <= 6.09
+|   |   |   |   |   |   |--- max_diff_uv_z <= -0.00
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- max_diff_uv_z >  -0.00
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- power_0_5_z >  6.09
+|   |   |   |   |   |   |--- max_diff_uv_z <= -0.07
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- max_diff_uv_z >  -0.07
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- max_diff_uv_z >  3.06
+|   |   |   |   |   |--- mad_diff_uv_z <= 103.11
+|   |   |   |   |   |   |--- mad_diff_uv_z <= -1.55
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- mad_diff_uv_z >  -1.55
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- mad_diff_uv_z >  103.11
+|   |   |   |   |   |   |--- power_0_5_z <= 2.94
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- power_0_5_z >  2.94
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |--- power_0_5_z >  27.50
+|   |   |   |   |--- mad_diff_uv_z <= -1.18
+|   |   |   |   |   |--- max_diff_uv_z <= 255.92
+|   |   |   |   |   |   |--- ptp_uv_z <= 126.86
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- ptp_uv_z >  126.86
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- max_diff_uv_z >  255.92
+|   |   |   |   |   |   |--- power_0_5_z <= 127.08
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- power_0_5_z >  127.08
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- mad_diff_uv_z >  -1.18
+|   |   |   |   |   |--- mad_diff_uv_z <= -0.01
+|   |   |   |   |   |   |--- max_diff_uv_z <= 0.31
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- max_diff_uv_z >  0.31
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- mad_diff_uv_z >  -0.01
+|   |   |   |   |   |   |--- mad_diff_uv_z <= 13.00
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- mad_diff_uv_z >  13.00
+|   |   |   |   |   |   |   |--- class: 1
+
+Features used:
+  mad_diff_uv_z: 0.0341
+  ptp_uv_z: 0.6490
+  power_0_5_z: 0.0524
+  flatline_max_s: 0.2052
+  max_diff_uv_z: 0.0593
